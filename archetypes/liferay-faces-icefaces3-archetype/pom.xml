@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.liferay.maven</groupId>
+		<artifactId>liferay-archetypes</artifactId>
+		<version>6.2.0-SNAPSHOT</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+	<groupId>com.liferay.faces.maven.archetypes</groupId>
+	<artifactId>liferay-faces-icefaces3-archetype</artifactId>
+	<packaging>maven-archetype</packaging>
+	<name>Liferay Maven2 Faces(ICEfaces3) Archetype</name>
+	<description>
+		The Maven Archetype for creating the Liferay Faces portlet project with ICEfaces3 support
+	</description>
+	<developers>
+		<developer>
+			<id>kamesh.sampath</id>
+			<name>Kamesh Sampath</name>
+		</developer>
+	</developers>
+	<properties>
+		<archetype.properties>${basedir}/src/main/resources/portletInfo.properties</archetype.properties>
+	</properties>
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.archetype</groupId>
+				<artifactId>archetype-packaging</artifactId>
+				<version>2.2</version>
+			</extension>
+		</extensions>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-archetype-plugin</artifactId>
+					<version>2.2</version>
+					<extensions>true</extensions>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
